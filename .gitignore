@@ -1,0 +1,6 @@
+.DS_Store
+node_modules/
+# Defensive: never accept .pem or .key into this repo.
+# Private keys live offline.
+*.pem
+*.key

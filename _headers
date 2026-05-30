@@ -1,0 +1,7 @@
+# Cloudflare Pages headers.
+#
+# datamancer.dev serves bare markdown — the file IS the artifact.
+# No rendering layer, no transformation. Bots and humans see the same bytes.
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
