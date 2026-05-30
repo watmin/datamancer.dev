@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects.
+# The bare domain has no index.html (zero rendering — the file IS the
+# artifact), so send the root to the raw identity card.
+/    /index.md    302
