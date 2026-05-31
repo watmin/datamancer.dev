@@ -1,0 +1,30 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://datamancer.dev/",
+      "service-doc": [
+        {
+          "href": "https://datamancer.dev/index.md",
+          "type": "text/markdown",
+          "title": "The practitioner identity card"
+        },
+        {
+          "href": "https://datamancer.dev/llms.txt",
+          "type": "text/markdown",
+          "title": "Agent map (llms.txt)"
+        },
+        {
+          "href": "https://datamancy.dev",
+          "type": "text/markdown",
+          "title": "The grimoire + MCP server"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://datamancer.dev/llms.txt",
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ]
+}

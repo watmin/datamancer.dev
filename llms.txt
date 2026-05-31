@@ -1,0 +1,39 @@
+# datamancer — the practitioner's identity card
+
+> `datamancer.dev` is the identity card of the practitioner of **datamancy** —
+> the practice of composing focused, hash-verifiable spells for LLMs. Bare
+> markdown; the file is the artifact. Three domains, three purposes — this one is
+> identity.
+
+## The three domains
+
+- [**datamancy.dev**](https://datamancy.dev) — the grimoire + MCP server. Latin-named defensive spells as raw markdown, behind an ECDSA P-256-signed manifest. Consume via `npx -y datamancy` in any MCP client. Its agent map: [datamancy.dev/llms.txt](https://datamancy.dev/llms.txt).
+- [**algebraic-intelligence.dev**](https://algebraic-intelligence.dev) — the chronicle. The story of building the substrate, in a voice-disciplined event-reporting register.
+- [**github.com/watmin**](https://github.com/watmin) — source repos.
+
+## Trust
+
+Every spell at datamancy.dev is SHA-256 hashed and listed in a manifest signed
+with **ECDSA P-256** by a key held non-exportably in AWS KMS. The `datamancy` npm
+adapter pins the matching public key in source and refuses any spell that fails
+verification — tampered content cannot reach an LLM. This card is one of three
+independent channels publishing the pinned key's fingerprint (the others: the npm
+package source, and a DNS `TXT` record at `_datamancy-key.datamancer.dev`):
+
+```
+09db7668a3a0ea27c52de060081c0a70584181c02f9eb94eff6941f904b5f12e
+```
+
+This is the `SHA-256` of the DER-encoded public key. Cross-check all three before
+trusting an install.
+
+## Identity
+
+watmin / john shields. AWS Shield Cognition / wat-rs / holon / Aetherium Datavatum
+lineage. Sorcerer, not wizard. Contact: [john@shields.wtf](mailto:john@shields.wtf).
+
+## Pointers
+
+- **Identity card (full):** [/index.md](https://datamancer.dev/index.md)
+- **MCP server card:** [/.well-known/mcp/server-card.json](https://datamancer.dev/.well-known/mcp/server-card.json)
+- **npm adapter:** [npmjs.com/package/datamancy](https://www.npmjs.com/package/datamancy)

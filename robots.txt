@@ -1,0 +1,13 @@
+# datamancer — practitioner identity card, agent-friendly
+# Identity card:        https://datamancer.dev/index.md
+# Agent map:            https://datamancer.dev/llms.txt
+# The grimoire (MCP):   https://datamancy.dev
+
+User-agent: *
+Allow: /
+
+# Content Signals (contentsignals.org, IETF draft-romm-aipref-contentsignals).
+# The identity card is openly published for agent consumption.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: https://datamancer.dev/sitemap.xml

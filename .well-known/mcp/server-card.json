@@ -1,0 +1,39 @@
+{
+  "serverInfo": {
+    "name": "datamancer.dev",
+    "version": "0.1.0"
+  },
+  "capabilities": {},
+  "x-no-server": true,
+  "x-server-url": "https://datamancy.dev",
+  "x-manifest-url": "https://datamancy.dev/.well-known/mcp/manifest.json",
+  "x-trust": {
+    "algorithm": "SHA-256",
+    "signed": true,
+    "signature-url": "https://datamancy.dev/.well-known/mcp/manifest.json.sig",
+    "signature-algorithm": "ECDSA-P256",
+    "pubkey-pinned-in": "https://www.npmjs.com/package/datamancy",
+    "pubkey-fingerprint-sha256": "09db7668a3a0ea27c52de060081c0a70584181c02f9eb94eff6941f904b5f12e"
+  },
+  "x-note": "datamancer.dev is the practitioner's identity card — there is no MCP server here. The grimoire MCP lives at datamancy.dev: a cryptographically verifiable static MCP serving the datamancy grimoire as raw markdown, manifest signed with ECDSA P-256, consumed via `npx -y datamancy`. This card is one of three independent channels publishing the pinned public-key fingerprint (the others: the npm package source, and a DNS TXT record at _datamancy-key.datamancer.dev) — cross-check all three before trusting an install. Three domains, three purposes: chronicle (algebraic-intelligence.dev) / identity (datamancer.dev) / grimoire (datamancy.dev).",
+  "x-recommended-resources": [
+    {
+      "name": "datamancy-mcp-manifest",
+      "uri": "https://datamancy.dev/.well-known/mcp/manifest.json",
+      "mimeType": "application/json",
+      "description": "The ECDSA P-256-signed MCP manifest. Each spell is SHA-256-verifiable against it; the detached signature is at /.well-known/mcp/manifest.json.sig."
+    },
+    {
+      "name": "datamancy-npm-package",
+      "uri": "https://www.npmjs.com/package/datamancy",
+      "mimeType": "text/html",
+      "description": "Zero-dependency MCP adapter. Pins the public key in source. Invoke via `npx -y datamancy`."
+    },
+    {
+      "name": "datamancer-identity-card",
+      "uri": "https://datamancer.dev/index.md",
+      "mimeType": "text/markdown",
+      "description": "The practitioner's identity card. Bare markdown."
+    }
+  ]
+}
