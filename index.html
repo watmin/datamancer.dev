@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>datamancer — the practitioner</title>
+  <meta name="description" content="The practitioner of datamancy — the practice of composing focused, hash-verifiable spells for LLMs. Identity card. Three domains: chronicle, identity, grimoire.">
+
+  <!-- RFC 8288 agent-discovery links (HTML equivalents of the HTTP Link headers in _headers) -->
+  <link rel="describedby" href="/llms.txt" type="text/markdown">
+  <link rel="api-catalog" href="/.well-known/api-catalog" type="application/linkset+json">
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml">
+  <link rel="alternate" href="/index.md" type="text/markdown" title="Identity card (markdown source)">
+  <link rel="related" href="https://datamancy.dev" title="The grimoire + MCP server">
+  <link rel="author" href="https://github.com/watmin">
+
+  <!-- WebMCP: expose the identity card to in-browser AI agents. The script
+       feature-detects navigator.modelContext and no-ops where absent. -->
+  <script src="/webmcp.js" defer></script>
+
+  <style>
+    :root { color-scheme: light dark; }
+    body { max-width: 44rem; margin: 4rem auto; padding: 0 1.25rem;
+           font: 15px/1.65 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    h1 { font-size: 1.5rem; margin: 0 0 .2rem; }
+    h2 { font-size: 1rem; margin: 2rem 0 .5rem; }
+    .sub { opacity: .75; margin-top: 0; }
+    code { background: rgba(127,127,127,.12); padding: .1em .35em; border-radius: 4px; }
+    a { color: inherit; }
+    ul { padding-left: 1.1rem; }
+    .trust { font-size: .9rem; opacity: .85; border-left: 3px solid rgba(127,127,127,.4); padding-left: .9rem; }
+  </style>
+</head>
+<body>
+  <h1>datamancer</h1>
+  <p class="sub">The practitioner of <a href="https://datamancy.dev">datamancy</a> — composing
+  focused, hash-verifiable spells for LLMs. This is the identity card; three domains, three purposes.</p>
+
+  <h2>The three domains</h2>
+  <ul>
+    <li><a href="https://datamancy.dev">datamancy.dev</a> — the grimoire + MCP server (raw, hash-verified markdown)</li>
+    <li><a href="https://algebraic-intelligence.dev">algebraic-intelligence.dev</a> — the chronicle</li>
+    <li><a href="https://github.com/watmin">github.com/watmin</a> — source</li>
+  </ul>
+
+  <p class="trust">Trust by integrity: every spell at datamancy.dev is SHA-256 hashed and listed in a
+  manifest signed with ECDSA&nbsp;P-256 by a key held non-exportably in AWS&nbsp;KMS. This card is one
+  of three channels publishing the pinned-key fingerprint <code>09db7668…</code> (the others: the
+  <a href="https://www.npmjs.com/package/datamancy">npm package</a> and DNS&nbsp;TXT
+  <code>_datamancy-key.datamancer.dev</code>). Cross-check all three before trusting an install.</p>
+
+  <h2>More</h2>
+  <ul>
+    <li><a href="/index.md">The full identity card</a> (markdown)</li>
+    <li><a href="/llms.txt">llms.txt</a> — the agent map</li>
+    <li><a href="mailto:john@shields.wtf">john@shields.wtf</a></li>
+  </ul>
+</body>
+</html>
