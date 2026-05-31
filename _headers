@@ -13,7 +13,7 @@
   Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
   Link: <https://github.com/watmin>; rel="author"
 
-# The identity card is the landing page (/ redirects here).
+# The full identity card (the root serves an HTML landing that links here).
 /index.md
   Content-Type: text/markdown; charset=utf-8
   Link: <https://datamancy.dev>; rel="related"; title="The grimoire + MCP server"
@@ -42,4 +42,6 @@
 /.well-known/oauth-protected-resource
   Content-Type: application/json; charset=utf-8
 /.well-known/mcp/server-card.json
+  Content-Type: application/json; charset=utf-8
+/.well-known/agent-skills/index.json
   Content-Type: application/json; charset=utf-8
